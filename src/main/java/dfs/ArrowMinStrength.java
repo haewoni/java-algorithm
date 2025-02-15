@@ -1,11 +1,12 @@
-package dfs;
+package main.java.dfs;
 
 import java.util.Arrays;
 import java.util.Scanner;
 /*
 N*N의 과녁, K개의 화살, 목표 점수 P 가 있다.
 화살의 굵기 i = 1~K 이고, 각 화살을 사용하기 위해서는 B[1] ~ B[K] 의 힘이 필요하다.
-과녁 중앙만 맞춘다고 가정했을때, 과녁 거리 |x1-x2|+|y1-t1| 가 굵기 i 미만일 경우 , 해당 과녁도 다 맞춘걸로 계산된다.
+과녁 중앙만 맞춘다고 가정했을때, 과녁 거리 |x1-x2|+|y1-t1| 가 굵기 i 미만일 경우 ,
+해당 과녁도 다 맞춘걸로 계산된다.
 목표 점수 P를 정확히 얻을 수 있는 최소 힘의 합을 계산해야한다.
 만약 목표 점수 P를 어떻게 해서도 얻을 수 없는 경우라면 -1 반환해야한다.
 
@@ -25,6 +26,7 @@ public class ArrowMinStrength {
     static int[][] board;
     static int[] B;
     static int minPower = Integer.MAX_VALUE;
+
     public static void main(String[] args) {
 
             Scanner sc = new Scanner(System.in);
